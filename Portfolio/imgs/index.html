@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabarivasan K | Software Developer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #f0f4ff, white);
+            color: #333;
+            overflow-x: hidden;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px;
+            background: rgba(255, 255, 255, 0.8);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            background: linear-gradient(to right, pink, purple, indigo);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .animated-bg {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            filter: blur(100px);
+            opacity: 0.5;
+            animation: move 6s infinite alternate ease-in-out;
+        }
+        .bg1 { background: pink; top: 10%; left: 10%; }
+        .bg2 { background: purple; top: 50%; right: 10%; }
+        .bg3 { background: blue; bottom: 10%; left: 50%; }
+        @keyframes move {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(30px, -30px); }
+        }
+        .btn, .btn-outline {
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .btn {
+            background: linear-gradient(to right, pink, purple, indigo);
+            color: white;
+            transition: transform 0.3s ease;
+        }
+        .btn:hover { transform: scale(1.1); }
+        .btn-outline {
+            border: 2px solid indigo;
+            color: indigo;
+        }
+        .about, .projects, .skills, .contact {
+            padding: 50px;
+            text-align: center;
+        }
+        .project-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .project-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .project-card:hover { transform: translateY(-10px); }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <span class="logo">Sabarivasan K</span>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="hero">
+        <div class="animated-bg bg1"></div>
+        <div class="animated-bg bg2"></div>
+        <div class="animated-bg bg3"></div>
+        <div>
+            <h1>Sabarivasan K</h1>
+            <p>Fresh Ideas, Clean Code</p>
+            <a href="#projects" class="btn">View My Work</a>
+            <a href="#contact" class="btn-outline">Contact Me</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>A passionate entry-level software developer ready to bring fresh perspectives and innovative solutions.</p>
+    </section>
+    
+    <section id="projects" class="projects">
+        <h2>Featured Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>E-Commerce Platform</h3>
+                <p>Developed a scalable e-commerce solution using Spring Boot and React.</p>
+            </div>
+            <div class="project-card">
+                <h3>Portfolio Generator</h3>
+                <p>Created a dynamic portfolio tool with customizable templates.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="skills" class="skills">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li>Java</li>
+            <li>JavaScript</li>
+            <li>React.js</li>
+            <li>MySQL</li>
+        </ul>
+    </section>
+    
+    <section id="contact" class="contact">
+        <h2>Get In Touch</h2>
+        <p>Email: contact@example.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Sabarivasan K. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabarivasan K | Software Developer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #f0f4ff, white);
+            color: #333;
+            overflow-x: hidden;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px;
+            background: rgba(255, 255, 255, 0.8);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            background: linear-gradient(to right, pink, purple, indigo);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .animated-bg {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            filter: blur(100px);
+            opacity: 0.5;
+            animation: move 6s infinite alternate ease-in-out;
+        }
+        .bg1 { background: pink; top: 10%; left: 10%; }
+        .bg2 { background: purple; top: 50%; right: 10%; }
+        .bg3 { background: blue; bottom: 10%; left: 50%; }
+        @keyframes move {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(30px, -30px); }
+        }
+        .btn, .btn-outline {
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .btn {
+            background: linear-gradient(to right, pink, purple, indigo);
+            color: white;
+            transition: transform 0.3s ease;
+        }
+        .btn:hover { transform: scale(1.1); }
+        .btn-outline {
+            border: 2px solid indigo;
+            color: indigo;
+        }
+        .about, .projects, .skills, .contact {
+            padding: 50px;
+            text-align: center;
+        }
+        .project-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .project-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .project-card:hover { transform: translateY(-10px); }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <span class="logo">Sabarivasan K</span>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="hero">
+        <div class="animated-bg bg1"></div>
+        <div class="animated-bg bg2"></div>
+        <div class="animated-bg bg3"></div>
+        <div>
+            <h1>Sabarivasan K</h1>
+            <p>Fresh Ideas, Clean Code</p>
+            <a href="#projects" class="btn">View My Work</a>
+            <a href="#contact" class="btn-outline">Contact Me</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>A passionate entry-level software developer ready to bring fresh perspectives and innovative solutions.</p>
+    </section>
+    
+    <section id="projects" class="projects">
+        <h2>Featured Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>E-Commerce Platform</h3>
+                <p>Developed a scalable e-commerce solution using Spring Boot and React.</p>
+            </div>
+            <div class="project-card">
+                <h3>Portfolio Generator</h3>
+                <p>Created a dynamic portfolio tool with customizable templates.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="skills" class="skills">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li>Java</li>
+            <li>JavaScript</li>
+            <li>React.js</li>
+            <li>MySQL</li>
+        </ul>
+    </section>
+    
+    <section id="contact" class="contact">
+        <h2>Get In Touch</h2>
+        <p>Email: contact@example.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Sabarivasan K. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
