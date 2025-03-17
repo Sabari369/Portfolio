@@ -940,6 +940,8 @@ nav ul li a:hover::after {
     z-index: 1;
 }
 
+
+
 /* Skills Section */
 .skills {
     position: relative;
