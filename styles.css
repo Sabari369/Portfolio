@@ -1284,6 +1284,11 @@ footer {
 }
 
 @media (max-width: 768px) {
+
+    h3 {
+        font-size: 1.5rem; /* Reduce h3 font size for mobile */
+    }
+
     h1 {
         font-size: 2.5rem;
     }
@@ -1291,6 +1296,7 @@ footer {
     h2 {
         font-size: 2rem;
     }
+
     
     .menu-toggle {
         display: block;
@@ -1331,6 +1337,59 @@ footer {
         gap: 1.5rem;
         text-align: center;
     }
+
+    .skills-container {
+        gap: 2rem;
+    }
+
+    .skills-category {
+        padding: 1.5rem;
+        margin: 0.5rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .skill-card {
+        padding: 1.5rem 1rem;
+    }
+
+    .skill-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+
+    .tab-nav {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        justify-content: flex-start;
+        -webkit-overflow-scrolling: touch;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 5px;
+    }
+
+    .tab-item {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+
+    .tab-item:hover {
+        background-color: #d0d0d0;
+    }
+
+    .tab-item.active {
+        border-bottom: 2px solid #007bff;
+    }
+
+    .project-tabs {
+        margin: 15px 0;
+    }
 }
 
 @media (max-width: 576px) {
@@ -1340,6 +1399,10 @@ footer {
     
     h2 {
         font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.3rem; /* Further reduce for very small screens */
     }
     
     section {
@@ -1363,6 +1426,41 @@ footer {
     .contact-icon {
         margin-right: 0;
         margin-bottom: 1rem;
+    }
+
+    .skills-category {
+        padding: 1rem;
+    }
+
+    .skill-card {
+        padding: 1rem;
+    }
+
+    .skill-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+
+    .tab-nav {
+        flex-direction: column;
+        overflow-x: hidden;
+        border-bottom: none;
+    }
+
+    .tab-item {
+        padding: 10px 15px;
+        font-size: 0.85rem;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .tab-item:last-child {
+        border-bottom: none;
+    }
+
+    .tab-item.active {
+        border-bottom: 2px solid #007bff;
+        background-color: #e0e0e0;
     }
 }
 
